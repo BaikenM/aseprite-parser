@@ -1,7 +1,4 @@
-﻿// Detailed .aseprite file format specification can be found at 
-// https://github.com/aseprite/aseprite/blob/main/docs/ase-file-specs.md#frames
-
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 #include <iomanip>
