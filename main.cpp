@@ -1,23 +1,20 @@
 #include "Aseprite_parser.h"
 
-using namespace std;
 using namespace aseprite;
 
 int main(int argc, char* argv[])
 {
-	cout << "Running aseprite parser tests..." << endl;
+	std::cout << "Running aseprite parser tests..." << std::endl;
 	
 	try
 	{
 		Aseprite sprite{ "../../../test.aseprite" };
-		
-		sprite.fileInfo();
-		cout << "TEST SUCCESSFUL." << endl;
+		std::cout << "TEST SUCCESSFUL." << std::endl;
 	}
 	catch (const std::exception& e)
 	{
-		cerr << "TEST FAILED." << endl;
-		cerr << e.what() << endl;
+		std::cerr << "TEST FAILED." << std::endl;
+		std::cerr << e.what() << std::endl;
 	}
 	return 0;
 }
